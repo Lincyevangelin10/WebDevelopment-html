@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Journey Community</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bus Journey Community</h1>
+        <nav>
+            <a href="#stories">Stories</a>
+            <a href="#tips">Tips</a>
+            <a href="#photos">Photos</a>
+            <a href="#forum">Forum</a>
+            <button id="addStoryBtn">Add Story</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="stories">
+            <h2>Travel Stories</h2>
+            <div id="storyContainer">
+                <!-- Travel stories will appear here -->
+            </div>
+        </section>
+
+        <section id="tips">
+            <h2>Travel Tips</h2>
+            <div id="tipContainer">
+                <!-- Travel tips will appear here -->
+            </div>
+        </section>
+
+        <section id="photos">
+            <h2>Travel Photos</h2>
+            <div id="photoContainer">
+                <!-- Travel photos will appear here -->
+            </div>
+        </section>
+
+        <section id="forum">
+            <h2>Forum</h2>
+            <div id="forumPosts">
+                <!-- Forum posts will appear here -->
+            </div>
+            <textarea id="newForumPost" placeholder="Write a new forum post..."></textarea>
+            <button id="postForumBtn">Post</button>
+        </section>
+    </main>
+
+    <!-- Modal for adding a story -->
+    <div id="storyModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add Your Story</h2>
+            <input type="text" id="storyTitle" placeholder="Title">
+            <textarea id="storyContent" placeholder="Your story..."></textarea>
+            <button id="submitStoryBtn">Submit</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
